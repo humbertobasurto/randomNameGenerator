@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baby Generator</title>
+	<script>
+		function BabyName(){
+			var names = ["lesly", "tracy", "stacy"]
+			var rand1 = Math.floor(Math.random()*names.length);
+			var phrase = names[rand1];
+			var pphrase = document.getElementById('phrase');
+			pphrase.innerHTML = phrase;
+
+		}
+		window.onload=BabyName;
+	</script>
+
+</head>
+<body>
+	<h1>Baby Generator</h1>
+	<p id = "phrase"></p>
+
+</body>
+</html>
